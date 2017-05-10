@@ -1,0 +1,38 @@
+﻿\<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>原生js实现时钟组件</title>
+		<meta name="Keywords" content="">
+		<meta name="description" content="">
+        <link rel="stylesheet" href="css/clock.css">
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{background:linear-gradient(to right,#8A3FA3,#3773B5,#69C28F);font-size:14px;font-family:"Microsoft YaHei";overflow: hidden;}
+			ul li{list-style:none;}
+		</style>
+	</head>
+<body>
+
+	<h1 id="time"></h1>
+    <div style="width: 2000px;height: 1200px;"></div>
+	<div id="clock"></div>
+
+
+    <script src="js/util.js"></script>
+     <script src="js/clock.js"></script>
+	<script type="text/javascript">
+
+        function leafclock(drag){
+            clock.init(getdom("clock"),{drag:drag});
+        }
+        getdates();
+        window.onload = function(){
+            leafclock(true);
+			setInterval(getdates,1000);
+        }
+
+	</script>
+
+</body>
+</html>

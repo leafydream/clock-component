@@ -1,0 +1,13 @@
+@charset:"utf-8";
+#clock{width:260px;height:260px;position:absolute;border-radius:50%;}
+#clock .radius{width:20px;height:20px;background:#111;position:absolute;top:120px;left:120px;border-radius:50%;}
+#hour{width:8px;height:60px;background:#111;position:absolute;top:70px;left:126px;transform-origin:bottom;}
+#min{width:6px;height:90px;background:#A718BE;position:absolute;top:40px;left:127px;transform-origin:bottom;}
+#sec{width:3px;height:110px;background:red;position:absolute;top:20px;left:129px;transform-origin:bottom;}
+#scale li{background:#111;width:2px;height:7px;position:absolute;left:129px;transform-origin:center 130px;}
+#scale li:nth-child(5n+1){width:3px;height:15px;}
+#time{text-align:center;padding:60px 0;font-size:56px;font-weight:normal;}
+@media screen and (max-width: 590px){
+    #time{display: none;}
+}
+

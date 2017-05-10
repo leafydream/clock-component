@@ -1,1 +1,1 @@
-# clock-component
+# clock
